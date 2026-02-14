@@ -1,0 +1,58 @@
+# --- WSL / OS Specific ---
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Ignore Windows-specific metadata created when accessing files via /mnt/
+.ShellClassInfo
+[Cc]onfig.Msi/
+
+# --- IDEs & Editors ---
+# VS Code (Commonly used with WSL Remote extension)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# JetBrains (IntelliJ, WebStorm, PyCharm)
+.idea/
+*.iws
+*.out
+
+# Vim / Emacs
+*~
+*.swp
+*.swo
+.netrwhist
+
+# --- Environment & Secrets ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- Common Build Artifacts ---
+node_modules/
+dist/
+build/
+bin/
+obj/
+out/
+target/
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Python (If applicable) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
